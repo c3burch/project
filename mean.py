@@ -1,19 +1,17 @@
-#takes a mean of numbers input to command line
-
+# This is on the handle_file branch.
 import sys
 
-# sys.argv is an array of inputs to the command line
-# here sys.argv[0] input is mean.py
-
-#checks to make sure there are inputs
+# Must have at least one value.
 if len(sys.argv) == 1:
     print 'Error: No arguments given.'
     exit()
 
-#takes the mean of all inputs
+# Calculate sum of command-line arguments.
+n = 0
 sum = 0
-for num in sys.argv[1:]:
+for num in open(sys.argv[1]):
     sum += float(num)
+    n += 1
 
-#prints the mean
-print sum / (len(sys.argv) - 1)
+print sum / n
+
