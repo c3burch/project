@@ -1,4 +1,4 @@
-#takes a mean of numbers inputed to command line
+#takes a mean of numbers input to command line
 
 import sys
 
